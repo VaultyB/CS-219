@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Module 6: Parity Check</title>
+    </head>
+
+    <body style="font-family: Arial;">
+        <h1>Even or Odd Parity Checker</h1>
+        <p>Enter a number into the text box below and click 'Check'</p>
+        <input type="text"
+                id="fInput"
+                value=""
+                style="border: solid black 1px">
+        <button onclick="checkNumber()"
+                style="background: linear-gradient(to bottom, green, darkgreen);
+                        color:white;
+                        padding: 4px 10px;
+                        border: none;
+                        border-radius: 2px;
+                        margin-left: 15px;">
+            Check
+        </button>
+        <p id="result"
+            style="margin-left: 100px;">
+        </p>
+
+        <script>
+            function checkNumber(){
+                let num = document.getElementById("fInput").value;
+                num = Number(num);
+
+                if(num % 2 === 0){
+                    document.getElementById("result").innerHTML=num+" is Even.";
+                }
+                else if(num % 2 === 1){
+                    document.getElementById("result").innerHTML=num+" is Odd.";
+                }
+                else{
+                    document.getElementById("result").innerHTML="Invalid input!";
+                    window.alert("Invalid input!");
+                }
+            }
+        </script>
+    </body>
+</html>

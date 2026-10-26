@@ -1,0 +1,31 @@
+html{
+    background-color: #e7e7e9;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    color:blue;
+}
+#pbox{
+    background-color: lightgreen;
+    border: 2px solid black;
+    margin-right: 270px;
+    margin-left: 270px;
+    margin-top: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+button{
+    background-color:orange;
+    color:white;
+    border: 2px transparent solid;
+    border-radius: 5px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+button:hover{
+    background-color: black;
+    color: orange
+}

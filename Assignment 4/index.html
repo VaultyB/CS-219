@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<title>Assignment 4</title>
+<html>
+    <body>
+        <label for="femail">Enter valid e-mail below</label>
+        <br>
+        <input type="input" id="femail" name="femail">
+        <input type="button" value="Check Email" onclick="isValidEmail()">
+        <p id="demo"></p>
+
+    </body>
+    <script>
+        const pattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9]+\.[a-zA-Z]+$/;
+        function isValidEmail()
+        {
+            let email = document.getElementById("femail").value;
+            //regex check
+            if(pattern.test(email))
+            {
+                document.getElementById("demo").innerText=""
+                console.log(email + " → Valid");
+                return true;
+            }
+            else
+            {
+                document.getElementById("demo").innerText="invalid email!"
+                console.log(email + " → Invalid");
+                return false;
+            }
+        }
+    </script>
+</html>

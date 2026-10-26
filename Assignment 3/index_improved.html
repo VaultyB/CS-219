@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <title>Module 6: Assignment</title>
+    <p id ="result"></p>
+
+    <body>
+        <form action="/action_page.php">
+            <label for="fInput" id="#fInput">Input a number below:</label><br>
+            <input type="text" id="fInput" value="" style="margin-right: 15px;">
+            <input type="Submit" value="Check" style="background: linear-gradient(to bottom, green, darkgreen); font-family: Arial; color:white;"></input>
+        </form>
+
+        <script>
+            function checkNumber(){
+                let input = fInput;
+                let check = (num%2);
+                if (num===1){
+                    document.getElementById("varity").innerHTML="Odd";
+                }
+                else if(num===0){
+                    document.getElementById("varity").innerHTML="Even";
+                }
+                else{
+                    alert("Invalid input!");
+                    document.getElementById("varity").innerHTML="Error";
+                }
+            }
+        </script>
+        
+    </body>
+</html>

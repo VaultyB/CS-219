@@ -1,0 +1,134 @@
+h1, h2{
+    text-align: center;
+}
+/*Nav Bar Start*/
+.nav-hori {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    overflow: hidden; /*keeps float inside the bar*/
+}
+.nav-hori li{
+    float: left; /*what causes the items to line up hori*/
+}
+.nav-hori li a{
+    display: block; /*makes the whole tab clickable*/
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.nav-hori li a:hover {
+    background-color: #555; /*change color on hover*/
+}
+/*Nav Vertical CSS Practice*/
+.nav-vert{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px; /*change this to see effect*/
+    background-color: #f1f1f1;
+}
+.nav-vert li a{
+    display: block;
+    color: black;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+.nav-vert li a:hover{
+    background-color: #555;
+    color:white;
+}
+/*Nav Bar End*/
+/*Dropdown Menu Start*/
+.dropbtn{
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+.dropdown{
+    position: relative;
+    display: inline-block; /*keeps btn sized to content*/
+    margin-top: 40px; /*was too close to Nav Bars*/
+}
+.dropdown-content{
+    display: none; /*hidden until condition: "hover"*/
+    position: absolute; /*forces self below the button*/
+    background-color: #f9f9f9;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.dropdown-content a{
+    color: black;
+    padding: 12px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover{
+    background-color: #f1f1f1;
+}
+/*reveal menu ONLY when hovering the button*/
+.dropdown:hover + .dropdown-content{ /*the plus means sibling selector*/
+    display: block;
+}
+/*button hover effect*/
+.dropdown:hover .dropbtn{
+    background-color: #3e8e41;
+}
+/*keeps menu open when moving to content*/
+.dropdown-content:hover{
+    display: block;
+}
+/*optional wrapper for spacing when needed*/
+.dropdown-wrapper{
+    display: inline-block;
+    margin: 20px;
+}
+/*Dropdown Menu End*/
+/*Flexbox Practice Start*/
+.toolbar{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+/*Flexbox Practice End*/
+/*Expanding Middle Box Practice Start*/
+.mid-box{
+    margin-left: 200px; /*change these to see effect*/
+    margin-right: 200px; /*change these to see effect*/
+    /*
+        gradient practice
+        0deg = top to bottom
+        90deg = left to right
+        135deg = diagonal (top-left to btm-right)
+        uses the two selected colors
+    */
+    background: linear-gradient(135deg, #4caf50, #81c784); /*135deg = angle of the gradient*/
+    padding: 20px;
+    height: auto;
+    border-left: 6px solid #2e7d32; /*decorative accent*/
+    border-radius: 12px; /*rounded corners*/
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15); /*soft shadow*/
+    font-family: Arial, Helvetica, sans-serif;
+    /*
+        rem = "root em" -> size relative to the browser's default font
+        1rem = default size (typical 16px)
+        1.2rem = 20% larger (more accessible)
+    */
+    font-size: 1.2rem;
+    text-align: center;
+    /*
+        font-weight controls thickness of the text
+        400 = normal, 700 = bold
+        500 is a middle ground between these two
+    */
+    font-weight: 500;
+}
+/*Expanding Middle Box Practice End*/
+/*Grid Practice Start*/
+
+/*Grid Practice End*/

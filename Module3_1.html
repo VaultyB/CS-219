@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <title>Testing External CSS</title>
+    <head>
+        <!--testing external CSS background color formatting-->
+        <link rel="stylesheet" href="M3_1_CSS.css">
+    </head>
+    <body id="mycss">
+        <h1 id="title" style="text-align: center;">tEst wOrds</h1>
+        <div class="div1">
+            <!--red color style inline will overwrite external CSS-->
+            <h2 style="color: red">More test words</h2>
+            <!--if this is true this text will be red-->
+            <h1 id="myh1css">Using a different ID from CSS</h1>
+
+            <h1 id="MyH1Css">Is it case sensitive?</h1>
+
+            <h1 id="myh1css">(yes it is)</h1>
+
+            <p id="myh1css">can it be a paragraph?</p>
+
+            <p class="class">What is a .class </p>
+
+            <p class id="myh1css">ID has prio over .class</p>
+        </div>
+        <!--End 8/31 lecture-->
+        <h2 id="cssmarginstest">margin testing</h2>
+        <!--End 9/2 lecture-->
+        <!--Begin 9/9 lecture-->
+        <table>
+            <tr style="text-decoration: underline;">
+                <th>Day of the Week</th>
+                <th>First Class</th>
+                <th>Second Class</th>
+            </tr>
+            <tr>
+                <td>Wednesday</td>
+                <td>Software Development CS219</td>
+                <td>Calculus I MATH201</td>
+            </tr>
+            <tr>
+                <td>Tuesday</td>
+                <td>Biology of Food and Nutrition BIOL112</td>
+                <td>Computer Design and Organization CS 226</td>
+            </tr>
+        </table>
+    </body>
+    <!--prio: inline > ID (#) > Class (,) > Element-->
+</html>

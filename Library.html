@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <button onclick="showBooks(fictionBooks)">Fiction</button>
+        <button onclick="showBooks(scifiBooks)">Sci-Fi</button>
+        <button onclick="showBooks(businessBooks)">Business</button>
+
+
+        <script>
+            function Library(book, author, availability){
+                this.bookTitle = book;
+                this.authorName = author;
+                this.rentability = availability;
+            }
+
+
+            const fictionBooks = [
+                new Library("A Parade of Horribles","Matt Dinniman",true),
+                new Library("Odyssey","Stephen Fry",false),
+                new Library("The Path of Ascension 2","C. Mantis", true),
+                new Library("He Who Fights with Monsters 8","Shirtaloon, Travis Deverell",true),
+                new Library("Dawnshard","Brandon Sanderson",true)
+            ]
+            const scifiBooks = [
+                new Library("Mark of the Fool vol. 10","J.M. Clarke",true),
+                new Library("A Brief History of Chronomancy","Andrew Rowe",true),
+                new Library("Not Til We Are Lost","Dennis E. Taylor",true)
+            ]
+            const businessBooks = [
+                new Library("The Wall Street Journal Digest","The Wall Street Journal",false),
+                new Library("The 7 Habits of Highly Effective People","Stephen R. Covey",true)
+            ]
+
+
+            function showBooks(bookArray){
+                for(let i=0; i < bookArray.length; i++){
+                    console.log(
+                    bookArray[i].bookTitle +
+                    " | " +
+                    bookArray[i].authorName +
+                    " | Available: " +
+                    bookArray[i].rentability
+                    );
+                }
+            }
+        </script>
+    </body>
+</html>

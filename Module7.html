@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<body>
+    <h1>JavaScript Funtions</h1>
+
+    <p>A function can be used many times</p>
+
+    <p id="demo"></p>
+    <p id="demo1"></p>
+
+    <script>
+        //Function to add two numbers
+        function add(a, b){
+        return a+b;
+        }
+
+        let sum1 = add(5, 5);
+        let sum2 = add(50, 50);
+    
+        document.getElementById("demo").innerHTML = "The results are " + sum1 + " and " + sum2;
+
+        function myFunction(x, y=10){
+            return x + y;
+        }
+        document.getElementById("demo1").innerHTML = myFunction(y=5, x=7);
+    </script>
+</body>

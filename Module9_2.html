@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="demo"></p>
+    </body>
+    <script>
+        function Person(first, last, age, eye){
+            this.firstName = first;
+            this.lastName = last;
+            this.age = age;
+            this.eyeColor = eye;
+        }
+        //Create two Person objects
+        const myFather = new Person("Timothy", "Fagan", 60, "Blue");
+        const myMother = new Person("Grace", "Killian", 59, "Blue");
+
+        //Display age
+        document.getElementById("demo").innerHTML =
+        "My father is " + myFather.age + ". My mother is "+ myMother.age + ".";
+    </script>
+</html>
